@@ -127,14 +127,14 @@
 
                 <!-- First section -->
                 <div class="row">
-                    <div class="col-sm-8">
+                    <div class="col-sm-8 col-sm-offset-2">
                         <div class="feature">
                             <div class="shack_burger">
                                 <div class="chicken">
                                     <img src="images/chicken.png" alt="Chicken" />
                                 </div>
 
-                                <h2>Shack Burger </h2>
+                                <h2>JAKARTA UTARA </h2>
                                 <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
                             </div>
                             <p class="caption">*Limited Time Only</p>
@@ -145,26 +145,67 @@
 
                 <!-- Second section -->
                 <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-8 col-sm-offset-2">
+                    <a href=""><div class="feature">
+                                    <div class="shack_burger">
+                                        <div class="chicken">
+                                            <img src="images/chicken.png" alt="Chicken" />
+                                        </div>
+        
+                                        <h2>JAKARTA BARAT </h2>
+                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
+                                    </div>
+                                    <p class="caption">*Limited Time Only</p>
+                                </div></a>
+                            </div>
+                </div><!-- second section end -->
+                <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
                                 <div class="feature">
                                     <div class="shack_burger">
                                         <div class="chicken">
                                             <img src="images/chicken.png" alt="Chicken" />
                                         </div>
         
-                                        <h2>Shack Burger </h2>
+                                        <h2>JAKARTA TIMUR </h2>
                                         <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
                                     </div>
                                     <p class="caption">*Limited Time Only</p>
                                 </div>
                             </div>
                 </div><!-- second section end -->
-
-                <!-- Third section -->
-                <!-- Carousel -->
+                <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                                <div class="feature">
+                                    <div class="shack_burger">
+                                        <div class="chicken">
+                                            <img src="images/chicken.png" alt="Chicken" />
+                                        </div>
+        
+                                        <h2>JAKARTA SELATAN </h2>
+                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
+                                    </div>
+                                    <p class="caption">*Limited Time Only</p>
+                                </div>
+                            </div>
+                </div><!-- second section end -->
+                <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                                <div class="feature">
+                                    <div class="shack_burger">
+                                        <div class="chicken">
+                                            <img src="images/chicken.png" alt="Chicken" />
+                                        </div>
+        
+                                        <h2>JAKARTA PUSAT </h2>
+                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
+                                    </div>
+                                    <p class="caption">*Limited Time Only</p>
+                                </div>
+                            </div>
+                </div><!-- second section end -->
                 
-
-                <!-- Forth section -->
+                                <!-- Forth section -->
                 <div class="row forth_sec">
                     <div class="col-sm-4">
                         <div class="menu">
@@ -200,8 +241,7 @@
             <p>Check out our opening hours and location address below.</p>
         </section>
 
-        <!-- Map -->
-        <div id="ourmaps"></div>
+        
 
         <!-- Footer -->
         <footer>
@@ -283,39 +323,7 @@
         <script src="js/bootsnav.js"></script>
 
         <!-- JS Implementing Plugins -->
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="js/gmaps.min.js"></script>
-
-        <script type="text/javascript">
-            var map;
-            $(document).ready(function () {
-                map = new GMaps({
-                    el: '#ourmaps',
-                    lat: 3.139003,
-                    lng: 101.686855,
-                    scrollwheel: false
-                });
-
-                //locations request
-                map.getElevations({
-                    locations: [[3.139003, 101.686855]],
-                    callback: function (result, status) {
-                        if (status == google.maps.ElevationStatus.OK) {
-                            for (var i in result) {
-                                map.addMarker({
-                                    lat: result[i].location.lat(),
-                                    lng: result[i].location.lng(),
-                                    infoWindow: {
-                                        content: '<address class="tooltip_address"><b>Junky Burger</b><br />Jalan Awan Hijau, Taman OUG<br />58200 Kuala Lumpur <br />Malaysia <br /></address>'
-                                    }
-                                });
-                            }
-                        }
-                    }
-                });
-
-            });
-        </script>
+        
 
 
         <!--main js-->
