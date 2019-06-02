@@ -52,7 +52,7 @@
                     <li role="presentation"><a href="#">JAK-TIM</a></li>
                     <li role="presentation"><a href="#">JAK-SEL</a></li>
                     <li role="presentation"><a href="#">JAK-PUS</a></li>
-                    <li role="presentation"><a href="#">LOGIN</a></li>
+                    <li role="presentation"><a href="{{route('login')}}">LOGIN</a></li>
              </ul>
             <div class="container">  
 
@@ -76,7 +76,7 @@
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
                     <h6 class="title">Menu</h6><br>
-                    <h4 class="title"><a href>LOGIN</a></h4>  
+                    <h4 class="title"><a href="{{route('login')}}">LOGIN</a></h4>  
                     <ul class="link">
                         <div class="btn-group">
                             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
