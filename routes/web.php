@@ -25,5 +25,9 @@ Route::middleware(['auth'])->group(function(){
     Route::get('admin/wilayah/create', 'Admin\WilayahController@create')->name('admin.wilayah.create');
     Route::post('admin/wilayah/store', 'Admin\WilayahController@store')->name('admin.wilayah.store');
 
+    Route::get('admin/utara', 'Admin\UtaraController@index')->name('admin.utara');
+    Route::get('admin/utara/create', 'Admin\UtaraController@create')->name('admin.utara.create');
+    Route::post('admin/utara/store', 'Admin\UtaraController@store')->name('admin.utara.store');
+
 });
 
