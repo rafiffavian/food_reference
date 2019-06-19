@@ -126,21 +126,14 @@
             <div class="container">
 
                 <!-- First section -->
-                <div class="row">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <div class="feature">
-                            <div class="shack_burger">
-                                <div class="chicken">
-                                    <img src="images/chicken.png" alt="Chicken" />
-                                </div>
-
-                                <h2>JAKARTA UTARA </h2>
-                                <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
-                            </div>
-                            <p class="caption">*Limited Time Only</p>
+                <div style="margin-top: 50px;" class="row">
+                    <div class="col-sm-9 col-sm-offset-2">
+                        <div style="background-image: url('images/classic_bg.jpg');background-repeat: no-repeat;background-size: 800px 400px; height:400px" class="jumbotron">
+                            <h2 style="color:#000;">Jakarta Utara</h2><br>
+                            <p style="color:#000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad vero sit, voluptatum ducimus officiis accusantium porro praesentium delectus, quos cupiditate recusandae omnis maiores deserunt? Nam ullam consectetur quos. Nobis!</p><br>
+                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Cick Me!</a></p>
                         </div>
                     </div>
-                    
                 </div><!-- first section end -->
 
                 <!-- Second section -->

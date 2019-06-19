@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Restoran;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Restoran;
+
 
 class UtaraController extends Controller
 {
