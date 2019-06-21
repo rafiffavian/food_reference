@@ -37,6 +37,10 @@ Route::middleware(['auth'])->group(function(){
     Route::get('admin/barat/create', 'Admin\BaratController@create')->name('admin.barat.create');
     Route::post('admin/barat/store', 'Admin\BaratController@store')->name('admin.barat.store');
 
+    Route::get('admin/menu', 'Admin\MenuController@index')->name('admin.menu');
+    Route::get('admin/menu/create', 'Admin\MenuController@create')->name('admin.menu.create');
+    Route::post('admin/menu/store', 'Admin\MenuController@store')->name('admin.menu.store');
+
 
 
 

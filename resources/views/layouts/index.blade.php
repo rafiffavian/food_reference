@@ -131,72 +131,13 @@
                         <div style="background-image: url('images/classic_bg.jpg');background-repeat: no-repeat;background-size: 800px 400px; height:400px" class="jumbotron">
                             <h2 style="color:#000;">Jakarta Utara</h2><br>
                             <p style="color:#000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad vero sit, voluptatum ducimus officiis accusantium porro praesentium delectus, quos cupiditate recusandae omnis maiores deserunt? Nam ullam consectetur quos. Nobis!</p><br>
-                            <p><a class="btn btn-primary btn-lg" href="#" role="button">Cick Me!</a></p>
+                            <p style="margin-top: 30px;"><a class="btn btn-primary btn-lg" href="#" role="button">Cick Me!</a></p>
                         </div>
                     </div>
                 </div><!-- first section end -->
 
                 <!-- Second section -->
-                <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2">
-                    <a href=""><div class="feature">
-                                    <div class="shack_burger">
-                                        <div class="chicken">
-                                            <img src="images/chicken.png" alt="Chicken" />
-                                        </div>
-        
-                                        <h2>JAKARTA BARAT </h2>
-                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
-                                    </div>
-                                    <p class="caption">*Limited Time Only</p>
-                                </div></a>
-                            </div>
-                </div><!-- second section end -->
-                <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2">
-                                <div class="feature">
-                                    <div class="shack_burger">
-                                        <div class="chicken">
-                                            <img src="images/chicken.png" alt="Chicken" />
-                                        </div>
-        
-                                        <h2>JAKARTA TIMUR </h2>
-                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
-                                    </div>
-                                    <p class="caption">*Limited Time Only</p>
-                                </div>
-                            </div>
-                </div><!-- second section end -->
-                <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2">
-                                <div class="feature">
-                                    <div class="shack_burger">
-                                        <div class="chicken">
-                                            <img src="images/chicken.png" alt="Chicken" />
-                                        </div>
-        
-                                        <h2>JAKARTA SELATAN </h2>
-                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
-                                    </div>
-                                    <p class="caption">*Limited Time Only</p>
-                                </div>
-                            </div>
-                </div><!-- second section end -->
-                <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2">
-                                <div class="feature">
-                                    <div class="shack_burger">
-                                        <div class="chicken">
-                                            <img src="images/chicken.png" alt="Chicken" />
-                                        </div>
-        
-                                        <h2>JAKARTA PUSAT </h2>
-                                        <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
-                                    </div>
-                                    <p class="caption">*Limited Time Only</p>
-                                </div>
-                            </div>
-                </div><!-- second section end -->
+                
                 
                                 <!-- Forth section -->
                 <div class="row forth_sec">
