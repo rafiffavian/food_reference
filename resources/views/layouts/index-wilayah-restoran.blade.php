@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/flaticon.css" />
 
         <!-- Animate -->
-        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="{{asset('css/animate.css')}}">
         <!-- Bootsnav -->
         <link rel="stylesheet" href="css/bootsnav.css">
         <!-- Color style -->
@@ -123,17 +123,19 @@
         <!-- Block Content -->
         <section id="block">
             <div class="container">
-            @foreach($jakut as $utara)
+            @foreach($data as $resto)
                 <!-- First section -->
-                <div style="margin-top: 50px;" class="row">
-                    <div class="col-sm-9 col-sm-offset-2">
-                        <div style="background-image: url('{{url(Storage::url($utara->gambar_wilayah))}}');background-repeat: no-repeat;background-size: 800px 400px; height:400px" class="jumbotron">
-                            <h2 style="color:#000;">{{$utara->nama_wilayah}}</h2><br>
-                            <p style="color:#000;">{{$utara->deskripsi_wilayah}}</p><br>
-                            <p style="margin-top: 30px;"><a class="btn btn-primary btn-lg" href="{{route('wilayah.restoran',$utara->id)}}" role="button">Cick Me!</a></p>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                        <img src="{{url(Storage::url($resto->gambar_restoran))}}" alt="">
+                            <div class="caption">
+                                <h3>{{$resto->nama_restoran}}</h3>
+                                <p>{{$resto->deskripsi_restoran}}</p>
+                                <p><a href="{{$resto->alamat_restoran}}"><span class="glyphicon  glyphicon-map-marker" aria-hidden="true"></span></a></p>
+                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                            </div>
                         </div>
                     </div>
-                </div><!-- first section end -->
             @endforeach    
 
                 <!-- Second section -->

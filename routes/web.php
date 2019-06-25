@@ -16,6 +16,7 @@
 // });
 
 Route::get('/', 'FrontController@index')->name('front');
+Route::get('/restoran/{id}/wilayah', 'FrontController@wilayah')->name('wilayah.restoran');
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
