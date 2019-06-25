@@ -41,6 +41,8 @@ Route::middleware(['auth'])->group(function(){
     Route::get('admin/menu/create', 'Admin\MenuController@create')->name('admin.menu.create');
     Route::post('admin/menu/store', 'Admin\MenuController@store')->name('admin.menu.store');
 
+    Route::get('admin/menu/getJsonData', 'Admin\MenuController@getJsonData')->name('admin.menu.getJsonData');
+
 
 
 

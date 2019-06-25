@@ -29,7 +29,7 @@
                         <label for="pengisi_acara">Nama Restoran</label> <!-- for di dalem lebel itu merujuk pada id -->
                         <select name="id_restoran" id="selectkuy" class="form-control">
                           @foreach(App\Restoran::all() as $resto) 
-                            <option value="{{$item->id}}">{{$resto->nama_restoran}}</option>
+                            <option value="{{$resto->id}}">{{$resto->nama_restoran}}</option>
                           @endforeach  
                         </select><br>
                         <label for="pengisi_acara">Harga</label> <!-- for di dalem lebel itu merujuk pada id -->

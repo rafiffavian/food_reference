@@ -66,7 +66,7 @@
 
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt=""></a>
+                   
                 </div>
                 <!-- End Header Navigation -->
             </div>   
@@ -107,34 +107,34 @@
 
                             <div class="inner_banner">
                                 <div class="banner_content">
-                                    <p>A double layer of sear-sizzled 100% pure beef mingled with special sauce on a sesame seed bun and topped with melty American cheese, crisp lettuce, minced onions and tangy pickles.</p>
-                                    <p>*Based on pre-cooked patty weight.</p>							
+                                   
                                 </div>
                                 <div class="stamp">
-                                    <img src="images/stamp.png" alt="" />
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!-- Container end -->
-            <p class="caption">*Limited Time Only</p>
+            
         </header><!-- Header end -->
 
         <!-- Block Content -->
         <section id="block">
             <div class="container">
-
+            @foreach($jakut as $utara)
                 <!-- First section -->
                 <div style="margin-top: 50px;" class="row">
                     <div class="col-sm-9 col-sm-offset-2">
-                        <div style="background-image: url('images/classic_bg.jpg');background-repeat: no-repeat;background-size: 800px 400px; height:400px" class="jumbotron">
-                            <h2 style="color:#000;">Jakarta Utara</h2><br>
-                            <p style="color:#000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad vero sit, voluptatum ducimus officiis accusantium porro praesentium delectus, quos cupiditate recusandae omnis maiores deserunt? Nam ullam consectetur quos. Nobis!</p><br>
+                        <div style="background-image: url('{{url(Storage::url($utara->gambar_wilayah))}}');background-repeat: no-repeat;background-size: 800px 400px; height:400px" class="jumbotron">
+                            <h2 style="color:#000;">{{$utara->nama_wilayah}}</h2><br>
+                            <p style="color:#000;">{{$utara->deskripsi_wilayah}}</p><br>
                             <p style="margin-top: 30px;"><a class="btn btn-primary btn-lg" href="#" role="button">Cick Me!</a></p>
                         </div>
                     </div>
                 </div><!-- first section end -->
+            @endforeach    
 
                 <!-- Second section -->
                 

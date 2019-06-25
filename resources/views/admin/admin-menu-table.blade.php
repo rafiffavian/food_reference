@@ -26,7 +26,7 @@
 							<th>Restoran</th>
 							<th>Jenis Menu</th>
 							<th>Harga Menu</th>
-							<th>Action</th>
+							<!-- <th>Action</th> -->
 						</tr>
 					</thead>
 					<tbody>
@@ -36,7 +36,7 @@
 							<td>{{$v->tipeRestoran->nama_restoran}}</td>
 							<td>{{$v->tipeMenu->jenis_menu}}</td>
 							<td>{{$v->harga}}</td>
-							<td>
+							<!-- <td>
 								<div class="btn btn-group">
 									<a href="" class="btn btn-warning btn-xs">
 										<i class="fa fa-pencil"></i>
@@ -45,7 +45,7 @@
 										<i class="fa fa-trash"></i>
 									</a>
 								</div>
-							</td>
+							</td> -->
 						</tr>
 					@endforeach	
 					</tbody>
@@ -54,5 +54,39 @@
 	    		</div>
 	    	</div>
 	    </div>	
-	</div>		
+	</div>	
+@endsection
+
+@section('js')	
+	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
+	
+	<script>
+		$(document).ready(function() {
+    		let dataTable = $('#datatable').DataTable({
+			processing: true,
+			serverSide: true,
+			ajax: '{!! route('admin.menu.getJsonData') !!}',
+			method: "GET",
+			dom: 'Bfrtip',
+			columns: [
+				{ data: 'nama_menu', name: 'nama_menu' },//name gausah di otak atik
+				{ data: 'tipe_restoran.nama_restoran', name: 'id_restoran' },
+				{ data: 'tipe_menu.jenis_menu', name: 'id_jenismenu' },
+				{ data: 'harga', name: 'harga' },
+				// { 
+
+				// 	data:'action',
+				// 	searchable: false,
+				// 	orderable: false,
+				// 	className: 'text-center',
+				// 	width:90,
+
+				// },
+				
+			],	
+
+		});
+
+	} );
+	</script>
 @stop
