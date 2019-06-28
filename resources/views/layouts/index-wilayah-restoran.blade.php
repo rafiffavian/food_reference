@@ -9,17 +9,17 @@
         <!-- Stylesheets -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/flaticon.css" />
+        <link rel="stylesheet" href="{{asset('css/flaticon.css')}}" />
 
         <!-- Animate -->
         <link rel="stylesheet" href="{{asset('css/animate.css')}}">
         <!-- Bootsnav -->
-        <link rel="stylesheet" href="css/bootsnav.css">
+        <link rel="stylesheet" href="{{asset('css/bootsnav.css')}}">
         <!-- Color style -->
-        <link rel="stylesheet" href="css/color.css">
+        <link rel="stylesheet" href="{{asset('css/color.css')}}">
 
         <!-- Custom stylesheet -->
-        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="{{asset('css/custom.css')}}" />
         <!--[if lt IE 9]>
                 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
@@ -44,81 +44,63 @@
         </div>
         <!--End Preloader -->
         <!-- Navbar -->
-        <nav class="navbar navbar-default bootsnav no-background navbar-fixed black">
-            <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="#">Home</a></li>
-                    <li role="presentation"><a href="#">JAK-UT</a></li>
-                    <li role="presentation"><a href="#">JAK-BAR</a></li>
-                    <li role="presentation"><a href="#">JAK-TIM</a></li>
-                    <li role="presentation"><a href="#">JAK-SEL</a></li>
-                    <li role="presentation"><a href="#">JAK-PUS</a></li>
-                    <li role="presentation"><a href="{{route('login')}}">LOGIN</a></li>
-             </ul>
-            <div class="container">  
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="#">Brand</a> -->
+    </div>
 
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav">
-                    <ul>
-                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                    </ul>
-                </div>        
-                <!-- End Atribute Navigation -->
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                   
-                </div>
-                <!-- End Header Navigation -->
-            </div>   
-
-            <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
-                <div class="widget">
-                    <h6 class="title">Menu</h6><br>
-                    <h4 class="title"><a href="{{route('login')}}">LOGIN</a></h4>  
-                    <ul class="link">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              WILAYAH <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Jakarta Utara</a></li>
-                              <li><a href="#">Jakarta Barat</a></li>
-                              <li><a href="#">Jakarta Timur</a></li>
-                              <li><a href="#">Jakarta Selatan</a></li>
-                              <li><a href="#">Jakarta Pusat</a></li>
-                            </ul>
-                          </div>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Side Menu -->
-        </nav>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="{{route('front')}}">Kembali ke HOME</a></li>
+        <!-- <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li> -->
+          </ul>
+        </li>
+      </ul>
+      <!-- <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+        <br><br>
 
         <!-- Header -->
-        <header id="hello">
-            <!-- Container -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="banner"><br><br>  
-                            <h1>FATTY BURGER</h1>
-
-                            <div class="inner_banner">
-                                <div class="banner_content">
-                                   
-                                </div>
-                                <div class="stamp">
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- Container end -->
-            
-        </header><!-- Header end -->
+       
 
         <!-- Block Content -->
         <section id="block">
@@ -131,12 +113,14 @@
                             <div class="caption">
                                 <h3>{{$resto->nama_restoran}}</h3>
                                 <p>{{$resto->deskripsi_restoran}}</p>
-                                <p><a href="{{$resto->alamat_restoran}}"><span class="glyphicon  glyphicon-map-marker" aria-hidden="true"></span></a></p>
-                                <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                <p><a href="{{$resto->alamat_restoran}}" target="_blank"><span class="glyphicon  glyphicon-map-marker" aria-hidden="true"></span>Location</a></p>
+                                <p><a href="{{route('menu.restoran',$resto->id)}}" class="btn btn-primary" role="button">Click Me!</a></p>
                             </div>
                         </div>
                     </div>
-            @endforeach    
+            @endforeach  
+            </div>  
+            
 
                 <!-- Second section -->
                 
@@ -253,16 +237,16 @@
         </div><!-- End off scroll up->
 
         <!-- JavaScript -->
-        <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>		
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="{{asset('http://code.jquery.com/jquery-1.12.1.min.js')}}"></script>		
+        <script src="{{asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')}}"></script>
         <!-- Bootsnav js -->
-        <script src="js/bootsnav.js"></script>
+        <!-- <script src="{{asset('js/bootsnav.js')}}"></script> -->
 
         <!-- JS Implementing Plugins -->
         
 
 
         <!--main js-->
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
     </body>	
 </html>	

@@ -17,6 +17,7 @@
 
 Route::get('/', 'FrontController@index')->name('front');
 Route::get('/restoran/{id}/wilayah', 'FrontController@wilayah')->name('wilayah.restoran');
+Route::get('/restoran/{id}/menu', 'FrontController@menu')->name('menu.restoran');
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
@@ -38,11 +39,23 @@ Route::middleware(['auth'])->group(function(){
     Route::get('admin/barat/create', 'Admin\BaratController@create')->name('admin.barat.create');
     Route::post('admin/barat/store', 'Admin\BaratController@store')->name('admin.barat.store');
 
+    Route::get('admin/selatan', 'Admin\SelatanController@index')->name('admin.selatan');
+    Route::get('admin/selatan/create', 'Admin\SelatanController@create')->name('admin.selatan.create');
+    Route::post('admin/selatan/store', 'Admin\SelatanController@store')->name('admin.selatan.store');
+
+    Route::get('admin/pusat', 'Admin\PusatController@index')->name('admin.pusat');
+    Route::get('admin/pusat/create', 'Admin\PusatController@create')->name('admin.pusat.create');
+    Route::post('admin/pusat/store', 'Admin\PusatController@store')->name('admin.pusat.store');
+
     Route::get('admin/menu', 'Admin\MenuController@index')->name('admin.menu');
     Route::get('admin/menu/create', 'Admin\MenuController@create')->name('admin.menu.create');
     Route::post('admin/menu/store', 'Admin\MenuController@store')->name('admin.menu.store');
 
     Route::get('admin/menu/getJsonData', 'Admin\MenuController@getJsonData')->name('admin.menu.getJsonData');
+
+    Route::get('admin/bg', 'Admin\BackController@index')->name('admin.bg');
+    Route::get('admin/bg/create', 'Admin\BackController@create')->name('admin.bg.create');
+    Route::post('admin/bg/store', 'Admin\BackController@store')->name('admin.bg.store');
 
 
 
