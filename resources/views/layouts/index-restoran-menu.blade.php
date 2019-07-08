@@ -104,33 +104,37 @@
 
         <!-- Block Content -->
         <section id="block">
-            
-            <div class="container">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="menu-section">
-                    <h2 class="menu-section-title">Breakfast & Starters</h2>
-            @foreach($food as $f)
-                    <div class="menu-item">
-                        <div class="menu-item-name">{{$f->nama_menu}}</div>
-                        <div class="menu-item-price"> ${{$f->harga}} </div>
-                    </div>
-            @endforeach    
-                </div>
+        <div class="row"><h1 style="text-align:center;color:#000">Menu</h1></div><br><br>
+        
+        <div class="row" style = "margin-left:200px">
+            <div class="col-md-6">
+                <h2 style="color:#000" class="menu-section-title">Makanan</h2><br><br>
+                @foreach($food as $f)
+                        <div class="menu-item">
+                            <div class="menu-item-name col-md-6"><h4 style="color:#000">{{$f->nama_menu}}</h4></div>
+                            <div class="menu-item-price"><h4 style="color:#000">${{$f->harga}}</h4></div>
+                        </div>
+                @endforeach    
             </div>
-                <!-- <div class="col-xs-12 col-sm-6">
+            <div class="col-md-6">
+            @foreach($drink as $d)
                     <div class="menu-section">
-                    <h2 class="menu-section-title">Main Course</h2>
+                    <h2 style="color:#000" class="menu-section-title">Minuman</h2><br><br>
                     <div class="menu-item">
-                        <div class="menu-item-name">Roast Stuffed Chicken</div>
-                        <div class="menu-item-price"> $18 </div>
-                        <div class="menu-item-description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, duis sed dapibus leo nec ornare diam. </div>
-                </div> -->
-
+                    
+                        <div class="menu-item-name col-md-6"><h4 style="color:#000">{{$d->nama_menu}}</h4></div>
+                        
+                        <div class="menu-item-price"><h4 style="color:#000">${{$d->harga}}</h4></div>
+                        
+            @endforeach 
+            </div>
+        </div>
+           
                 <!-- Second section -->
                 
                 
                                 <!-- Forth section -->
-           
+            
         </section><!-- Block Content end-->
 
         <!-- Lock -->

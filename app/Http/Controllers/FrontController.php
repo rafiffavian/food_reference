@@ -22,7 +22,9 @@ class FrontController extends Controller
     }
     public function menu($id)
     {
-        $food = Menu::where('id_restoran',$id)->get();
-        return view('layouts.index-restoran-menu',compact('food'));
+        $food = Menu::where('id_restoran',$id)->where('id_jenismenu','1')->get();
+        $drink = Menu::where('id_restoran',$id)->where('id_jenismenu','2')->get();
+        
+        return view('layouts.index-restoran-menu',compact(['food','drink']));
     }
 }

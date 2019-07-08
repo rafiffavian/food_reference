@@ -70,8 +70,8 @@
 			dom: 'Bfrtip',
 			columns: [
 				{ data: 'nama_menu', name: 'nama_menu' },//name gausah di otak atik
-				{ data: 'tipe_restoran.nama_restoran', name: 'id_restoran' },
-				{ data: 'tipe_menu.jenis_menu', name: 'id_jenismenu' },
+				{ data: 'tipe_restoran.nama_restoran', name: 'tipeRestoran.nama_restoran' },
+				{ data: 'tipe_menu.jenis_menu', name: 'tipeMenu.jenis_menu' },
 				{ data: 'harga', name: 'harga' },
 				// { 
 
