@@ -26,10 +26,16 @@ Route::middleware(['auth'])->group(function(){
     Route::get('admin/wilayah', 'Admin\WilayahController@index')->name('admin.wilayah');
     Route::get('admin/wilayah/create', 'Admin\WilayahController@create')->name('admin.wilayah.create');
     Route::post('admin/wilayah/store', 'Admin\WilayahController@store')->name('admin.wilayah.store');
+    Route::get('admin/wilayah/{id}/edit', 'Admin\WilayahController@edit')->name('admin.wilayah.edit');
+    Route::put('admin/wilayah/{id}/update', 'Admin\WilayahController@update')->name('admin.wilayah.update');
+    Route::get('admin/wilayah/{id}/delete', 'Admin\WilayahController@delete')->name('admin.wilayah.delete');
 
     Route::get('admin/utara', 'Admin\UtaraController@index')->name('admin.utara');
     Route::get('admin/utara/create', 'Admin\UtaraController@create')->name('admin.utara.create');
     Route::post('admin/utara/store', 'Admin\UtaraController@store')->name('admin.utara.store');
+    Route::get('admin/utara/{id}/edit', 'Admin\UtaraController@edit')->name('admin.utara.edit');
+    Route::put('admin/utara/{id}/update', 'Admin\UtaraController@update')->name('admin.utara.update');
+    Route::get('admin/utara/{id}/delete', 'Admin\UtaraController@delete')->name('admin.utara.delete');
 
     Route::get('admin/timur', 'Admin\TimurController@index')->name('admin.timur');
     Route::get('admin/timur/create', 'Admin\TimurController@create')->name('admin.timur.create');

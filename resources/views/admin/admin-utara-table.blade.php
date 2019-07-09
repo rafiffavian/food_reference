@@ -40,10 +40,10 @@
 							<td>{{$v->alamat_restoran}}</td>
 							<td>
 								<div class="btn btn-group">
-									<a href="" class="btn btn-warning btn-xs">
+									<a href="{{route('admin.utara.edit',$v->id)}}" class="btn btn-warning btn-xs">
 										<i class="fa fa-pencil"></i>
 									</a>
-									<a href="" class="btn btn-danger btn-xs">
+									<a href="{{route('admin.utara.delete',$v->id)}}" class="btn btn-danger btn-xs">
 										<i class="fa fa-trash"></i>
 									</a>
 								</div>

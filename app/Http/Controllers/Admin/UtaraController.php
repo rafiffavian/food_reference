@@ -37,4 +37,38 @@ class UtaraController extends Controller
          $utara->create($data);
          return redirect(route('admin.utara'));
     }
+    public function edit($id)
+    {
+        $utara = Restoran::findOrFail($id);
+        return view('admin.admin-utara-edit',compact('utara'));
+    }
+
+    public function update(Request $request , $id)
+    {
+        $request->validate([
+
+    		'id_wilayah' => 'required',
+    		'gambar_restoran' => 'required|image|max:2048',
+    		'nama_restoran' => 'required',
+    		'deskripsi_restoran' => 'required',
+    		'alamat_restoran' => 'required'
+    		
+        ]);
+        $data = (array)$request->except(['_token','gambar_restoran']);
+         if ($request->has('gambar_restoran')){
+            $path = $request->file('gambar_restoran')->store('public/utaraupload');
+            $data['gambar_restoran'] = $path;
+         }
+         $utara = Wilayah::findOrFail($id);
+
+         $utara->update($data);
+         $utara->save();
+        return redirect(route('admin.utara'));  
+    }
+
+    public function delete($id)
+    {
+        \App\Restoran::findOrFail($id)->delete();
+        return redirect(route('admin.utara'));
+    }
 }
